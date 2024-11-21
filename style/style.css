@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@font-face{
+    font-family: vazir;
+    src: url(../fonts/Vazir.woff2);
+}
+
+@font-face{
+    font-family: vazir-thin;
+    src: url(../fonts/Vazir-Thin.woff2);
+}
+@font-face{
+    font-family: vazir-medium;
+    src: url(../fonts/Vazir-Medium.woff2);
+}
+@font-face{
+    font-family: vazir-light;
+    src: url(../fonts/Vazir-Light.woff2);
+}
+
+@font-face{
+    font-family: vazir-bold;
+    src: url(../fonts/Vazir-Bold.woff2);
+}
+
+
+body{
+    direction: rtl;
+    font-family: vazir;
+} 
+
+main header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main header nav{
+    padding: 0 166px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+main header nav ul{
+    min-width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+main header nav ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+main header nav ul li a{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #3f3f3f;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main header .wrapper{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21aa58;
+    position: relative;
+    top: 10vh;
+}
+
+
+main header .wrapper .right-part{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 240px 20px 20px;
+}
+
+main header .wrapper .right-part h1{
+    width: 90%;
+    color: #fff;
+    font-size: 36px;
+   font-family: vazir-bold;
+}
+
+main header .wrapper .right-part p{
+    color: #fff;
+    font-size: 21px;
+}
+
+main header .wrapper .right-part form .box{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main header .wrapper .right-part form .box span{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+}
+
+main header .wrapper .right-part form input[type=number]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+main header .wrapper .right-part form input[type=number]::placeholder{
+    color: #dddddd;
+}
+
+main header .wrapper .right-part form{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+main header .wrapper .right-part form input[type=submit]{
+    width: 160px;
+    height: 40px;
+    background-color: #fff;
+    color: #21aa58;
+    border-radius: 5px;
+    border: none;
+    font-family: vazir-medium;
+}
+
+main header .wrapper .right-part > a{
+    width: 50%;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+main header .wrapper .left-part{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/intro_desktop.jpg);
+    background-size: cover;
+    transform: scaleX(-1);
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+}
+
+main header .download-box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main header .download-box img{
+    width: 160px;
+    position: relative;
+    top: 22vh;
+}
+main .super-app{
+    width: 100%;
+    background-color: #f2f5f8;
+    position: relative;
+    top: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 70px;
+   padding: 20px;
+}
+
+main .super-app h2{
+    color: #404040;
+    font-size: 36px;
+    font-family: vazir-bold;
+}
+main .super-app .cards-container{
+    width: 75%;
+    min-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+
+main .super-app .cards-container .card{
+    width: 292px;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .super-app .cards-container .card h3{
+    color: #3f3f3f;
+    font-size: 16px;
+}
+
+main .super-app .cards-container .card p{
+    font-size: 14px;
+    color: #a3a3a3;
+}
