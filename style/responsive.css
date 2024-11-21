@@ -1,0 +1,112 @@
+@media only screen and (max-width: 400px) {
+  main header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+  main header nav.desktop-nav {
+    display: none;
+  }
+  main header nav.mobile-nav {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+  }
+
+  main header nav.mobile-nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  main header nav.mobile-nav svg.bars {
+    width: 40px;
+  }
+
+  main header .wrapper {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    padding: 10px;
+  }
+
+  main header .wrapper .right-part {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+  main header .wrapper .right-part h1 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  main header .wrapper .left-part {
+    display: none;
+  }
+
+  main header .wrapper .right-part p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  main header .wrapper .right-part form {
+    display: none;
+  }
+
+  main header .wrapper .right-part > a {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  main header .download-box {
+    display: none;
+  }
+  main .super-app {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  main .super-app h2 {
+    font-size: 22px;
+  }
+
+  main .super-app .cards-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+  main .super-app .cards-container .card {
+    width: 78px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  main .super-app .cards-container .card h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  main .super-app .cards-container .card p{
+    display: none;
+}
+}

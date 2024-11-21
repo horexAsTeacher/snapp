@@ -53,7 +53,7 @@ main header{
     align-items: center;
 }
 
-main header nav{
+main header nav.desktop-nav{
     padding: 0 166px;
     height: 10vh;
     width: 100%;
@@ -63,6 +63,10 @@ main header nav{
     background-color: #fff;
     align-self: flex-start;
     z-index: 1;
+}
+
+main header nav.mobile-nav{
+    display: none;
 }
 
 main header nav ul{
